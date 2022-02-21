@@ -5,6 +5,9 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MoviesContext from './context/MoviesContext';
 import UserContext from './context/UserContext';
+import Formulario from './components/Formulario';
+
+
 
 
 ReactDOM.render(
@@ -12,6 +15,7 @@ ReactDOM.render(
     <UserContext>
       <MoviesContext>
         <App />
+        <Formulario/>
       </MoviesContext>
     </UserContext>
   </React.StrictMode>,
@@ -22,3 +26,4 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
