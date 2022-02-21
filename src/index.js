@@ -5,7 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import MoviesContext from './context/MoviesContext';
 import UserContext from './context/UserContext';
-import Formulario from './components/Formulario';
+
 
 
 
@@ -15,7 +15,6 @@ ReactDOM.render(
     <UserContext>
       <MoviesContext>
         <App />
-        <Formulario/>
       </MoviesContext>
     </UserContext>
   </React.StrictMode>,
