@@ -1,5 +1,7 @@
 import React, { useState } from "react";
-import "./Navbar.css";
+import { Link } from "react-router-dom";
+import "../css/navbar.css";
+import { FaFilm } from 'react-icons/fa';
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -16,24 +18,31 @@ function Navbar() {
   };
   return (
     <nav className="nav">
-      <a href="#" className="nav__brand">
-        Movies Reviews
-      </a>
+       <li className="nav__item"  >
+              <div style={{color:'yellow'}} >
+              <FaFilm className="logo" size={70}  />
+              </div>
+       </li>
       <ul className={active}>
         <li className="nav__item">
-          <a href='/' className="nav__link">
+          <Link to='/' className="nav__link">
             Home
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href='/details/:id' className="nav__link">
+          <Link to='/details/:id' className="nav__link">
             Details
-          </a>
+          </Link>
         </li>
         <li className="nav__item">
-          <a href='/login' className="nav__link">
+          <Link to='/login' className="nav__link">
             Login
-          </a>
+          </Link>
+        </li>
+        <li className="nav__item">
+          <Link to='/formulario' className="nav__link">
+            Registrate
+          </Link>
         </li>
       </ul>
       <div onClick={navToggle} className={icon}>
