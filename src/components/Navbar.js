@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../css/navbar.css";
-import { FaFilm } from 'react-icons/fa';
+import { GiFilmSpool } from 'react-icons/gi';
 
 function Navbar() {
   const [active, setActive] = useState("nav__menu");
@@ -19,8 +19,8 @@ function Navbar() {
   return (
     <nav className="nav">
        <li className="nav__item"  >
-              <div style={{color:'yellow'}} >
-              <FaFilm className="logo" size={70}  />
+              <div style={{color: '#ffc107'}} >
+              <GiFilmSpool className="logo" size={70}  />
               </div>
        </li>
       <ul className={active}>
